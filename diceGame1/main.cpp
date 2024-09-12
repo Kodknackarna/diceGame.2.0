@@ -9,7 +9,7 @@
 int main() {
 
     srand(time(0)); // Initialisera slumptalsgeneratorn med nuvarande tid
-
+    //testkommentar
     //Dice dice(6, 0);
 
     //dice.roll();
