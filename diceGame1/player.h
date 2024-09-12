@@ -12,10 +12,10 @@ public:
     int getScore();
     void increaseScore();
     void addDie(int sides);
-    std::string name;
-private:
-
+    std::string getName();
     
+private:
+    std::string name;
     int score;
     std::vector<Dice> dice;
 

@@ -1,6 +1,6 @@
 #include <vector>
 #include <iostream>
-//#include "player.h"
+#include <string>
 
 
 class SimpleDiceGame {
@@ -8,10 +8,12 @@ public:
 	SimpleDiceGame();
 	
 
-	void startGame(std::vector<Player>& players,
+	void startGame(std::vector<Player*>& players,
 		std::vector<Dice> diceVector);
 
-	void takeTurn(std::vector<Player>& players);
+	void takeTurn(std::vector<Player*>& players);
+
+	std::vector<std::string> getWinners(std::vector<Player*>& players, int winScore);
 };
 
 

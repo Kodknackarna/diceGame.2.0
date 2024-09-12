@@ -33,6 +33,10 @@ int Player::getScore() {
     return score;
 }
 
+std::string Player::getName() {
+    return name;
+}
+
 void Player::increaseScore() {
     score++;
 };
